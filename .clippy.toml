@@ -1,0 +1,18 @@
+# Clippy configuration for MokaRs
+avoid-breaking-exported-api = false
+msrv = "1.70.0"
+
+# Cognitive complexity threshold
+cognitive-complexity-threshold = 30
+
+# Documentation
+missing-docs-in-crate-items = false
+
+# Allowed lints that might be too noisy
+allowed-prefixes = ["to", "into", "from", "with", "try"]
+
+# Disallowed types (empty by default, can be configured as needed)
+disallowed-types = []
+
+# Disallowed methods (empty by default, can be configured as needed)  
+disallowed-methods = []

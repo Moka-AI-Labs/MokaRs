@@ -1,0 +1,13 @@
+# Rustfmt configuration for MokaRs (stable channel compatible)
+edition = "2021"
+max_width = 100
+tab_spaces = 4
+newline_style = "Unix"
+use_small_heuristics = "Default"
+
+# Code style
+force_explicit_abi = true
+merge_derives = true
+
+# Stable channel features only
+# Advanced formatting features require nightly channel

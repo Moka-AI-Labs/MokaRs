@@ -1,0 +1,25 @@
+[package]
+name = "moka_rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Moka AI Labs"]
+description = "A Rust project with comprehensive CI/CD pipeline"
+license = "MIT"
+repository = "https://github.com/Moka-AI-Labs/MokaRs"
+keywords = ["rust", "pipeline", "ci-cd"]
+categories = ["development-tools"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+debug = true
